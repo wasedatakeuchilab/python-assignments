@@ -1,0 +1,23 @@
+---
+name: pre-commit
+
+on:
+  push:
+    branches:
+      - master
+      - submit/**
+  pull_request:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run pre-commit-ci-lite
+        uses: pre-commit-ci/lite-action@v1.0.2
+        if: always()
