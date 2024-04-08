@@ -4,9 +4,9 @@ name: Test Example Assignment
 on:
   push:
     branches:
-      - submit
+      - submit/**
     paths:
-      - assignments/example/main.py
+      - assignments/example/*.py
 
 env:
   PYTHONUNBUFFERED: '1'
