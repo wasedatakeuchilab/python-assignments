@@ -31,7 +31,7 @@ Buzz
 
 # FizzBuzz
 
-Create function fizzbuzz that takes integer $n$ as a parameter and satisfies the following requirements.
+Create function `fizzbuzz()` that takes integer $n$ as a parameter and satisfies the following requirements.
 
 - It prints numbers from 1 to $n$.
 - It prints `Fizz` instead when the number is a multiple of 3.
