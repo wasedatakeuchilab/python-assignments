@@ -1,12 +1,12 @@
 ---
-name: Test Assignment 20240412
+name: Test Assignment 20240419
 
 on:
   push:
     branches:
       - submit/**
     paths:
-      - assignments/20240412/*.py
+      - assignments/20240419/*.py
 
 env:
   PYTHONUNBUFFERED: '1'
@@ -30,4 +30,4 @@ jobs:
       - name: Install test dependencies
         run: pip install -r requirements.test.txt
       - name: Run tests
-        run: pytest assignments/20240412 -vv
+        run: pytest assignments/20240419 -vv
